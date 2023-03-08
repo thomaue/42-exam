@@ -8,7 +8,7 @@ void ft_putnbr(int nb)
 
     if (nb < 0)
     {
-        write(1 , "-" , 1);
+        write(1 , "-" , 1);                                         ///NOT FINISHED///
         nbr = nb * -1;
     }
 
