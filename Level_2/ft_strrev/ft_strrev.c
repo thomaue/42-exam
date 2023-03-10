@@ -12,7 +12,6 @@ char    *ft_strrev(char *str)
         i++;
     char * str2 = malloc(sizeof(char) * (i + 1));
     i-=1;
-
     while (i >= 0)
     {
         str2[i2] = str[i];
@@ -20,8 +19,15 @@ char    *ft_strrev(char *str)
         i2+=1;
     }
     str2[i2] = '\0';
+    i = 0;
+    while(str2[i] != '\0')
+    {
+        str[i] = str2[i];
+        i+=1;
+    }
 
-    return str2;
+    free (str2);
+    return str;
 }
 
 // int main(void)
