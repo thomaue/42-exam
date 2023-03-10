@@ -20,7 +20,7 @@ char    *ft_strdup(char *src)
         i++;
     }
 
-    return src2;
+    return src2;  /// pas de free car on doit retourner src2 
 }
 
 // int main(void)
